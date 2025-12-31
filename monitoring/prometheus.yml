@@ -1,0 +1,50 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'wiki-kafka-system'
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - alertmanager:9093
+
+rule_files:
+  - '/etc/prometheus/alert_rules.yml'
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Kafka UI metrics
+  - job_name: 'kafka-ui'
+    static_configs:
+      - targets: ['kafka-ui:8080']
+    metrics_path: '/actuator/prometheus'
+
+  # Schema Registry - disabled (no Prometheus metrics endpoint)
+  # - job_name: 'schema-registry'
+  #   static_configs:
+  #     - targets: ['schema-registry:8081']
+
+  # Spring Boot services
+  - job_name: 'ingestion-service'
+    static_configs:
+      - targets: ['ingestion-service:8084']
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 10s
+
+  - job_name: 'stream-processor'
+    static_configs:
+      - targets: ['stream-processor:8082']
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 10s
+
+  - job_name: 'consumer-service'
+    static_configs:
+      - targets: ['consumer-service:8083']
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 10s

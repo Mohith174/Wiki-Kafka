@@ -1,0 +1,3 @@
+com/backend/processor/topology/WikiAggregationTopology.class
+com/backend/processor/StreamProcessorApplication.class
+com/backend/processor/config/KafkaStreamsConfig.class

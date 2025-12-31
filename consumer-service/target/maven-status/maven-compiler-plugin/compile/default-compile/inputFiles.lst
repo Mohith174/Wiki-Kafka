@@ -1,0 +1,5 @@
+/Users/mohithk/Desktop/wiki-kafka-project/consumer-service/src/main/java/com/backend/consumer/config/KafkaConsumerConfig.java
+/Users/mohithk/Desktop/wiki-kafka-project/consumer-service/src/main/java/com/backend/consumer/service/SlowConsumer.java
+/Users/mohithk/Desktop/wiki-kafka-project/consumer-service/src/main/java/com/backend/consumer/listener/WikiAggregateListener.java
+/Users/mohithk/Desktop/wiki-kafka-project/consumer-service/src/main/java/com/backend/consumer/ConsumerServiceApplication.java
+/Users/mohithk/Desktop/wiki-kafka-project/consumer-service/src/main/java/com/backend/consumer/service/FastConsumer.java

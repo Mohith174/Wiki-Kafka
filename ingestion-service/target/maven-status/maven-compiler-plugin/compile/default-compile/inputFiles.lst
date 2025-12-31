@@ -1,0 +1,7 @@
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/metrics/ProducerMetrics.java
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/model/WikiEvent.java
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/service/WikimediaStreamConsumer.java
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/IngestionServiceApplication.java
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/config/AppConfig.java
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/service/EventEnrichmentService.java
+/Users/mohithk/Desktop/wiki-kafka-project/ingestion-service/src/main/java/com/backend/ingestion/config/KafkaProducerConfig.java

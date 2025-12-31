@@ -1,0 +1,9 @@
+com/backend/ingestion/config/AppConfig.class
+com/backend/ingestion/config/KafkaProducerConfig.class
+com/backend/ingestion/service/WikimediaStreamConsumer$1.class
+com/backend/ingestion/service/WikimediaStreamConsumer.class
+com/backend/ingestion/IngestionServiceApplication.class
+com/backend/ingestion/model/WikiEvent.class
+com/backend/ingestion/metrics/ProducerMetrics.class
+com/backend/ingestion/model/WikiEvent$WikiEventBuilder.class
+com/backend/ingestion/service/EventEnrichmentService.class

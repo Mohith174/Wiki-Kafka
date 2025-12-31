@@ -1,0 +1,43 @@
+groups:
+  - name: kafka_alerts
+    interval: 30s
+    rules:
+      # Consumer Lag Alert
+      - alert: HighConsumerLag
+        expr: kafka_consumer_lag > 1000
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High consumer lag detected"
+          description: "Consumer group {{ $labels.group }} lag is {{ $value }} (> 1000)"
+
+      # Broker Down Alert
+      - alert: KafkaBrokerDown
+        expr: up{job="kafka-broker"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Kafka broker is down"
+          description: "Kafka broker has been unreachable for 1 minute"
+
+      # Service Down Alert
+      - alert: ServiceDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Service {{ $labels.job }} is down"
+          description: "{{ $labels.job }} has been unreachable for 1 minute"
+
+      # High Error Rate
+      - alert: HighErrorRate
+        expr: rate(http_server_requests_seconds_count{status=~"5.."}[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value }} per second"

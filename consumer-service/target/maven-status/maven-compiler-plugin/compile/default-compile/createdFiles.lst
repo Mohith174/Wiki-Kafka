@@ -1,0 +1,5 @@
+com/backend/consumer/service/FastConsumer.class
+com/backend/consumer/service/SlowConsumer.class
+com/backend/consumer/config/KafkaConsumerConfig.class
+com/backend/consumer/ConsumerServiceApplication.class
+com/backend/consumer/listener/WikiAggregateListener.class
