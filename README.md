@@ -65,6 +65,15 @@ Wikimedia → Ingestion → Stream → Consumer → SSE Feed
 
 ---
 
+## Screenshots
+
+<img width="1512" height="865" alt="Screenshot 2025-12-31 at 1 19 04 AM" src="https://github.com/user-attachments/assets/273bd2f2-4d95-40d2-84c2-f46d0ed5ea68" />
+<img width="1512" height="865" alt="Screenshot 2025-12-31 at 1 19 16 AM" src="https://github.com/user-attachments/assets/54666dbc-22d4-4930-9642-d1f4990e471f" />
+<img width="1512" height="865" alt="Screenshot 2025-12-31 at 1 19 16 AM" src="https://github.com/user-attachments/assets/08da6757-3412-48d1-b324-522f945ffd5e" />
+
+
+---
+
 | Component | Technology | Version | Purpose |
 |-----------|-----------|---------|---------|
 | Runtime | Java | 17 | Application runtime |
