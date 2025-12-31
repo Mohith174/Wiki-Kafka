@@ -1,0 +1,64 @@
+# Maven
+**/target/
+*.jar
+*.war
+*.ear
+*.class
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.metadata/
+*.swp
+*.swo
+
+# Kafka Streams state
+/tmp/
+/kafka-streams/
+/state-stores/
+**/state/
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Docker volumes (local data)
+docker-volumes/
+data/
+**/data/
+
+# Build
+build/
+dist/
+out/
+
+# Environment files (if you add any later)
+.env
+.env.local
+*.env
+
+# Secrets (safety net)
+**/secrets/
+*.pem
+*.key
